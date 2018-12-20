@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView_profile"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helmer Capassola"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="12horas"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_below="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:text="Perde a minha carteira "
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/img_statu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_status"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/computer"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+       android:layout_below="@id/img_statu">
+        
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="18dp"
+                   android:layout_height="18dp"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitCenter"
+                   android:src="@drawable/ic_partilhar"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:text="Partilhar"
+                   android:fontFamily="sans-serif-medium"
+                   android:textColor="#000"
+                   android:textSize="13sp"/>
+
+           </LinearLayout>
+
+       </RelativeLayout>
+
+    </LinearLayout>
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bottom_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="bottom"
+        android:src="@drawable/ic_add"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</RelativeLayout>
